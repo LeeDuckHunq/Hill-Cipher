@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Hill Cipher Algorithm</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Hill <span>Cipher</span></h1>
+            <div class="right_nav">
+                <a href="#home">Home</a>
+                <a href="https://www.geeksforgeeks.org/hill-cipher/" target="_blank">Theory</a>
+                <a href="https://en.wikipedia.org/wiki/Encryption" target="_blank">Encrypt</a>
+                <div class="buttn">
+                    <button onclick="location.href='#crypt'"><span><i class='bx bx-lock'></i></span>Encrypt Now</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="introduce" id = "home">
+        <img src="/img/hill_cipher.png">
+        <div class="info">
+            <h2>Lester S. Hill</h4>
+            <p>Lester S. Hill (1891–1961) là một nhà toán học và nhà giáo dục người Mỹ, người quan tâm đến các ứng dụng của toán học vào truyền thông. Ông nhận bằng cử nhân (1911) và bằng thạc sĩ (1913) từ Cao đẳng Columbia và bằng tiến sĩ từ Đại học Yale (1926). Ông giảng dạy tại Đại học Montana, Đại học Princeton, Đại học Maine, Đại học Yale và Cao đẳng Hunter. Trong số những đóng góp đáng chú ý của ông là mật mã Hill. Ông cũng phát triển các phương pháp phát hiện lỗi trong số mã điện báo và viết hai cuốn sách. Ông đã giới thiệu Hill Cipher vào năm 1929 trong bài báo "Cryptography in an Algebraic Alphabet". Dù Hill Cipher có tính toán đơn giản và dễ hiểu, nhưng nó dễ bị tấn công bởi phân tích ma trận nếu kẻ tấn công thu thập đủ cặp bản rõ - bản mã. Ngày nay, thuật toán này ít được sử dụng trong thực tế nhưng vẫn đóng vai trò quan trọng trong giáo dục mật mã học.</p>
+        </div>
+    </div>
+    <div class="container" id = "crypt">
+        <h1>Matrix Encryption & Decryption</h1>
+        <label for="inputString">Nhập chuỗi:</label>
+        <input type="text" id="inputString" placeholder="Nhập vào chuỗi in hoa">
+    
+        <label for="matrixK">Nhập ma trận khóa 2x2 Key (K):</label>
+        <div class="matrix-input">
+          <input type="number" id="k11" placeholder="K[1][1]">
+          <input type="number" id="k12" placeholder="K[1][2]">
+          <input type="number" id="k21" placeholder="K[2][1]">
+          <input type="number" id="k22" placeholder="K[2][2]">
+        </div>
+    
+        <button id="encryptBtn">Encrypt</button>
+        <button id="decryptBtn">Decrypt</button>
+    
+        <h2>Kết Quả:</h2>
+        <p id="result"></p>
+    
+        <h2>Quá Trình:</h2>
+        <pre id="process"></pre>
+    </div>
+    <footer class = "the_end">
+        <div class="contact">
+            <h4>Contact Me At</h4>
+            <a href="https://www.instagram.com/le.hung.4105/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://www.facebook.com/le.hung.4105/" target="_blank"><i class='bx bxl-facebook'></i></a>
+            <a href="https://github.com/LeeDuckHunq" target="_blank"><i class='bx bxl-github'></i></a>
+        </div>
+        <p class = "not_yet">
+            <span>Copyright <span><i class='bx bx-copyright' ></i></span> by Lee Duck Hunq</span>
+            The website is developed by Le Duck Hunq, who is in the process of learning and mastering HTML and CSS along with his passion. Encrypt and decrypt messages using the Hill Cipher algorithm with a 2x2 matrix key. Learn how this classical encryption method works and enhance your cryptography skills with our interactive tool. If you have any questions, please contact him for the fastest response possible.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
